@@ -1,15 +1,15 @@
 **Projeto Sistema Distribuídos**
 
-**Ideia inicial** *IPromotion*
+**Ideia inicial** *IPromotion*:
 A ideia e criar uma aplicação que fornece ao público promoções (*Gift cards/ descotos*) diárias de empresas que queiram divulgar seus produtos em promoção. 
 
-**Funcionamento**
+**Funcionamento**:
 Nela a empresa pode inserir promoções, atualizar e deletar de acordo como for conveniente, para que fique salvo no banco de dados da aplicação para
 que seja notificado ao cliente.
 Nela o cliente também deve fazer um cadastro para que seus dados fiquem salvos, para que possam receber as notificações.
 Quando a empresa desejar promover suas promoções, ela apertará um botão e todos os clientes cadastrados no banco de dados serão notificados com um pop-up em sua tela.
 
-**Ferramentas**
+**Ferramentas**:
 * A aplicação será toda implementada em JavaScript usando para o Backend: NodeJS e para o Frontend: ReactJS.
 * Todos os dados serão salvos em um banco NoSQL: MongoDB, usando Mongoose.
 
