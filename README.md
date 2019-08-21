@@ -1,7 +1,7 @@
 **Projeto Sistema Distribuídos**
 
 **Ideia inicial** *IPromotion*:
-A ideia e criar uma aplicação que fornece ao público promoções (*Gift cards/ descotos*) diárias de empresas que queiram divulgar seus produtos em promoção. 
+A ideia e criar uma aplicação que fornece ao público promoções (*Gift cards/ descontos*) diárias de empresas que queiram divulgar seus produtos em promoção. 
 
 **Funcionamento**:
 Nela a empresa pode inserir promoções, atualizar e deletar de acordo como for conveniente, para que fique salvo no banco de dados da aplicação para
