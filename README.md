@@ -12,6 +12,7 @@ Quando a empresa desejar promover suas promoções, ela apertará um botão e to
 **Ferramentas**:
 * A aplicação será toda implementada em JavaScript usando para o Backend: NodeJS e para o Frontend: ReactJS.
 * Todos os dados serão salvos em um banco NoSQL: MongoDB, usando Mongoose.
+* O servidor será criado usando Express.
 
 **Componentes**
  * Empresa  (*Ainda não sei as quantidades*)
