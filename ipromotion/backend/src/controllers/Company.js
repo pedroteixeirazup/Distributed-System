@@ -52,7 +52,7 @@ module.exports = {
     async delete(req, res) {
         const company = await Company.findByIdAndDelete({ _id: req.params.id });
 
-        if (!customer)
+        if (!company)
             res.status(400).json({ error: 'Company not exist' });
         
         res.send();

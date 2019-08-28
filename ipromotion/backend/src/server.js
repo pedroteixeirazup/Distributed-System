@@ -8,26 +8,33 @@ const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
-const Company = require('./models/Company');
+const axios = require('axios');
 
 const port = 3333;
 
 const connectedUsers = {};
 
 io.on('connection', socket => {
-    console.log('a user connect');
 
     const { user } = socket.handshake.query;
     connectedUsers[user] = socket.id
 
-    socket.on('client message',  (msg) => {
-        console.log('Cliente: ' + msg);
-    })
+    console.log("New client connected"), setInterval(
+        () => getApiAndEmit(socket),
+        100
+      );
 
-    console.log(connectedUsers, socket.id);
-    var  person = {name: 'PEDRO', age: 22 }
-    socket.broadcast.emit('promotion', person);
+      socket.on("disconnect", () => console.log("Client disconnected"));
 })
+
+const getApiAndEmit = async socket => {
+    try {
+        const res = await axios.get('http://localhost:3333/company');
+        socket.emit('promotion', res.data);
+    } catch(error) {
+        console.error(`Error: ${error.code}`);
+    }
+}
 
 mongoose.connect(`mongodb+srv://${dbconfig.user}:${dbconfig.password}@cluster0-crbfw.mongodb.net/test?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
