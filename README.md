@@ -19,6 +19,7 @@ Quando a empresa desejar promover suas promoções, ela apertará um botão e to
  * Cliente  (*Ainda não sei as quantidades*)
  * Aplicativo
  * Servidor
+ * Banco de Dados
 
 **Testes**
 * Demonstração de funcionalidades: mostrar que as funcionalidades de CRUD (*Create, Read, Update, Delete*) foram implementadas.
