@@ -36,7 +36,7 @@ const getApiAndEmit = async socket => {
     }
 }
 
-mongoose.connect(`mongodb+srv://${dbconfig.user}:${dbconfig.password}@cluster0-crbfw.mongodb.net/test?retryWrites=true&w=majority`, {
+mongoose.connect(`mongodb+srv://${dbconfig.user}:${dbconfig.password}@omnistack-vlfdq.mongodb.net/test?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useFindAndModify: true
 })
