@@ -1,3 +1,9 @@
+'''
+    Created by: Pedro Henrique Faria Teixeira
+    For: Dristributed System Class        
+'''
+
+
 import threading
 import time
 import random
@@ -29,7 +35,7 @@ def worker(message, increment):
         flag = True
 
     # print(upperLetter)
-    time.sleep(0.2)
+    time.sleep(1)
 
 t = [0]*30
 
