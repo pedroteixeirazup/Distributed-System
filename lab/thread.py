@@ -49,5 +49,5 @@ while flag == False:
 print('Upper string: ' + upperMsg)
 
 
-# Reason if I can't restart a thread in python
+# Reason of I can't restart a thread in python
 # https://stackoverflow.com/questions/29692250/restarting-a-thread-in-python
