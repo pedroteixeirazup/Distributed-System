@@ -1,6 +1,6 @@
 '''
     Created by: Pedro Henrique Faria Teixeira
-    For: Dristributed System Class        
+    For: Distributed System Class        
 '''
 
 
@@ -35,13 +35,13 @@ def worker(message, increment):
         flag = True
 
     # print(upperLetter)
-    time.sleep(1)
+    time.sleep(0.1)
 
 t = [0]*30
 
 while flag == False:
     for i in range(30):
-        t[i] = threading.Thread(target=worker,args=(msg, aux+1 ))
+        t[i] = threading.Thread(target=worker,args=(msg, aux+1))
         t[i].start()
         t[i].join()
 
